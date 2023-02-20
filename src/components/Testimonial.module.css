@@ -1,0 +1,88 @@
+.nameContainer {
+  padding: 3em;
+  border-radius: 10px;
+  color: var(--light-grayish-blue);
+  box-shadow: 1px 1px 7px var(--very-dark-blackish-blue);
+}
+
+.nameContainer h2 {
+  font-size: 1em;
+}
+
+.nameContainer h3 {
+  color: var(--light-grayish-blue);
+  opacity: 50%;
+  font-size: 1em;
+}
+
+.nameContainer p {
+  color: var(--light-grayish-blue);
+  opacity: 70%;
+}
+
+.nameContainer h1 {
+  padding: 1em 0;
+  font-size: 1.5em;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.daniel {
+  background-color: var(--moderate-violet);
+  background-image: url(../../public/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 92% 9%;
+}
+
+.jonathan {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.kira {
+  background-color: white;
+}
+
+.jeanette {
+  background-color: white;
+}
+
+.patrick {
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.kira,
+.jeanette {
+  color: var(--very-dark-grayish-blue);
+}
+
+.kira p,
+.jeanette p {
+  color: var(--very-dark-grayish-blue);
+}
+
+.kira h3,
+.jeanette h3 {
+  color: var(--very-dark-grayish-blue);
+}
+
+@media (min-width: 1200px) {
+  .daniel {
+    grid-column: span 2;
+    order: -3;
+    background-position: 80% 13%;
+  }
+  .jonathan {
+    order: -2;
+  }
+  .kira {
+    grid-row: span 2;
+    order: -1;
+  }
+  .patrick {
+    grid-column: span 2;
+  }
+}

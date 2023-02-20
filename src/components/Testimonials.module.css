@@ -1,0 +1,23 @@
+.mainContainer {
+  max-width: 375px;
+  padding: 3em;
+  margin: 3em auto;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: 1fr;
+  background-color: var(--light-grayish-blue);
+  box-shadow: 1px 1px 3px var(--very-dark-blackish-blue);
+}
+
+img {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1200px) {
+  .mainContainer {
+    max-width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

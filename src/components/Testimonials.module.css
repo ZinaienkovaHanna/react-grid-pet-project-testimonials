@@ -1,12 +1,13 @@
 .mainContainer {
   max-width: 375px;
   padding: 2em;
-  margin: 1em auto;
+  margin: 1% auto;
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr;
   background-color: var(--light-grayish-blue);
-  box-shadow: 1px 1px 3px var(--very-dark-blackish-blue);
+  box-shadow: 1px 1px 5px var(--very-dark-blackish-blue);
+  border-radius: 5px;
 }
 
 img {
